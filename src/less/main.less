@@ -1,0 +1,22 @@
+//defaults
+@grid-margin: 4em;
+@grid-column-gap: 2em;
+@grid-column-width: 22em;
+
+article {
+  column-width: @grid-column-width;
+  column-gap: @grid-column-gap;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: @grid-margin;
+  overflow: auto;
+
+  section {
+    -webkit-column-break-before: always;
+    break-before: column;
+  }
+
+  dl, ul, ol {
+    display: inline-block;
+  }
+}
